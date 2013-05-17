@@ -3,7 +3,7 @@ package com.baron.exception;
 public class FinallyTest {
 
 	//	output:
-	//	try print 2
+	//	try print finally 2
 	static int testReturn(){
 		try {
 			System.out.println("try");
@@ -14,7 +14,7 @@ public class FinallyTest {
 		}
 	}
 	// output:
-	// finally
+	// java.lang.Exception: finally
 	static void testException() throws Exception{
 		try {
 			throw new Exception("try");
@@ -28,7 +28,7 @@ public class FinallyTest {
 		return 1;
 	}
 	// output:
-	// try 1 finally
+	// try print finally 1
 	static int test2(){
 		try {
 			System.out.println("try");
